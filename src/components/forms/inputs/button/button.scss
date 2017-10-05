@@ -1,0 +1,9 @@
+@import '../../../../style/main';
+
+.button {
+  composes: defaultButton;
+}
+
+.buttonDis {
+  composes: defaultButtonDisabled;
+}
