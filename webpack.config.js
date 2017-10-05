@@ -12,24 +12,20 @@ module.exports = {
     poll: false
   },
   devtool: "source-map",
+
   entry: ['babel-polyfill', './src/index.js'],
   output: {
     filename: 'bundle.js',
-    path: path.join(__dirname, "public/source")
+    path: path.join(__dirname, "public")
   },
   devServer: {
-    contentBase: path.join(__dirname, "public/source"),
+    contentBase: path.join(__dirname, "public"),
     compress: true,
     port: 3000,
     historyApiFallback: true
   },
   module: {
     rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: "eslint-loader",
-      },
       {
         test: /\.js$|\.jsx$/,
         exclude: /(node_modules)/,
