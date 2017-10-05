@@ -1,0 +1,9 @@
+@import '../../../../style/main';
+
+.input {
+  composes: defaultInput;
+}
+
+.wrapInput {
+  position: relative;
+}
