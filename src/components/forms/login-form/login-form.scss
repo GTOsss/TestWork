@@ -1,0 +1,23 @@
+.form {
+  text-align: center;
+}
+
+.wrapRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.wrapColumn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.label {
+  width: 100%;
+  text-align: left;
+  text-transform: uppercase;
+  color: #A9A9A9;
+  margin-top: 1.4rem;
+}
